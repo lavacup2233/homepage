@@ -1,13 +1,64 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YoungZM's Page</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    Hello World!
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">YoungZM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.youngzm.com/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/youngzm339">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/youngzm339?tab=repositories">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:youngzm339@outlook.com">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h3>Hi there, <a href="https://github.com/YoungZM339">Brian Yang</a>（YoungZM） here! 👋</h3>
+
+            <p>I&#39;m <a href="https://github.com/YoungZM339">Brian Yang</a>, a student currently working on Web
+                Application Dev.</p>
+
+            <p>Interested in all the fun things! Check these if you want:</p>
+
+            <ul>
+                <li><a href="https://blog.youngzm.com/">My Blog (zh-CN)</a>.</li>
+                <li><a href="https://github.com/YoungZM339">My GitHub Account</a>.</li>
+            </ul>
+
+            <p>📫 How to reach me : Why not write an email to me?</p>
+            <p id="copyright"></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+    let now_data = new Date(Date.now());
+    document.getElementById('copyright').innerText += `© ${now_data.getFullYear()} Brian Yang (@YoungZM339)`
+</script>
 
 </html>
