@@ -39,8 +39,10 @@
         <div class="container">
             <h3>Hi there, <a href="https://github.com/YoungZM339">Brian Yang</a>（YoungZM） here! 👋</h3>
 
-            <p>I&#39;m <a href="https://github.com/YoungZM339">Brian Yang</a>, a student currently working on Web
-                Application Dev.</p>
+            <p>I&#39;m <a href="https://github.com/YoungZM339">Brian Yang</a>, currently an undergraduate student
+                majoring in Software Engineering at Henan University of Technology. I am focusing on research in Large
+                Language Model (LLM) applications. If you have any questions or would like to discuss further, please
+                feel free to contact me.</p>
 
             <p>Interested in all the fun things! Check these if you want:</p>
 
@@ -51,6 +53,7 @@
 
             <p>📫 How to reach me : Why not write an email to me?</p>
             <p id="copyright"></p>
+            <p id="icp"></p>
         </div>
     </section>
 
@@ -59,6 +62,9 @@
 <script>
     let now_data = new Date(Date.now());
     document.getElementById('copyright').innerText += `© ${now_data.getFullYear()} Brian Yang (@YoungZM339)`
+    if (window.location.hostname === '040608.xyz') {
+        document.getElementById('icp').innerText = '豫ICP备2024046825号';
+    }
 </script>
 
 </html>
